@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head><title>my captain</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <h2 class="head">Navbar</h2>
+
+    <div class="vid-container">
+        <video id="Video1" class="bgvid back" autoplay="false" muted="muted" preload="auto" loop>
+            <source src="http://shortcodelic1.manuelmasiacsasi.netdna-cdn.com/themes/geode/wp-content/uploads/2014/04/milky-way-river-1280hd.mp4.mp4" type="video/mp4">
+        </video>
+        <div class="inner-container">
+          <video id="Video2" class="bgvid inner" autoplay="false" muted="muted" preload="auto" loop>
+            <source src="http://shortcodelic1.manuelmasiacsasi.netdna-cdn.com/themes/geode/wp-content/uploads/2014/04/milky-way-river-1280hd.mp4.mp4" type="video/mp4">
+          </video>
+          <div class="box">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username"/>
+            <input type="text" placeholder="Password"/>
+            <button>Login</button>
+            <p>Not a member? <span>Sign Up</span></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <h2 class="des">Discription</h2>
+      <br>
+      <p>
+        Splitbold is the easiest way to share expenses with friends and family and stop stressing about “who owes who.” <br>Millions of people around the world use Splitbold to organize group bills for households, trips, and more.<br> Our mission is to reduce the stress and awkwardness that money places on our most important relationships.
+      </p>
+      <img class="logo" src="logo.jpeg" >
+      <br>
+      <h2 class="look">Lets Look inside it</h2>
+      <img class="dis_img"src="dis_img_1.jpeg" >
+      <img class="dis_img"src="dis_img_2.jpeg" >
+      <img class="dis_img"src="dis_img_3.jpeg" >
+      <img class="dis_img"src="dis_img_4.jpeg" >
+      <br>
+      <button class="start">Get Started</button>
+      <br>
+      <h3>footer</h3>
+        <!-- <button type="button">creat a group</button>
+      <div class="container">
+       <img src="/w3images/bandmember.jpg" alt="Avatar">
+        <p>herry paid 1000 rs for train fare </p>
+         <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right">
+        <p> <span class="time-left">11:01</span>
+      </div> -->
+      
+     
+      <!-- <h2>icon</h2>
+      <img src="https://cdn-icons.flaticon.com/png/128/3321/premium/3321713.png?token=exp=1656387284~hmac=87971077f6b71a17265b7ba4a17f48f2" alt="Avatar" class="right">
+      <input type="text" id="des" name
+      ="des"><br>
+      <h2>icon</h2>
+      <input type="text" id="name" name
+      ="name"><br>
+      <h2>icon</h2>
+      <input type="text" id="amt" name
+      ="amt"><br>
+      <button id= "add" type="button">add expenses</button>
+      <h2>footer</h2> -->
+</body>
+</html>
+<style>
+    body{
+  padding:0;
+  margin:0;
+  background-image: url(background.jpeg), url(background1.jpeg);
+  /* background-position: right bottom, left top; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+h2.head{
+    color: white;
+    text-align: center;
+}
+h2.des{
+    color: white;
+    font-family:Helvetica;
+    text-align: center;
+}
+h2.look{
+    color: white;
+    font-family:Helvetica;
+    text-align: center;
+}
+h3{
+    color: white;
+    font-family:Helvetica;
+    text-align: center;
+}
+button.start{
+    font-family:Helvetica;
+    text-align: center;
+    background-color:#f44336;
+    /* margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);  */
+}
+img.logo{
+    
+    width: 200px;
+    height: 200px;
+}
+img.dis_img{
+    border: solid;
+    width: 200px;
+    height: 200px;
+}
+.container{
+    color: white;
+    font-family:Helvetica;
+    
+    text-align: center;
+    
+    
+}
+.vid-container{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+.bgvid.back {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+.inner {
+  position: absolute;
+}
+.inner-container{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:calc(50vh - 200px);
+  left:calc(50vw - 200px);
+  overflow:hidden;
+}
+.bgvid.inner{
+  top:calc(-50vh + 200px);
+  left:calc(-50vw + 200px);
+  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+  -webkit-filter:blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter:blur(10px);
+}
+.box{
+  position:absolute;
+  height:100%;
+  width:100%;
+  font-family:Helvetica;
+  color:#fff;
+  background:rgba(0,0,0,0.13);
+  padding:30px 0px;
+}
+.box h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:30px;
+}
+.box input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.2);
+  color:#fff;
+  border:0;
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+  outline:none;
+}
+.box button{
+  background:#742ECC;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}
+.box button:active{
+  background:#27ae60;
+}
+.box p{
+  font-size:14px;
+  text-align:center;
+}
+.box p span{
+  cursor:pointer;
+  color:#666;
+}
+</style>
+
+
